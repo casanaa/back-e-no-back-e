@@ -10,6 +10,7 @@ class Product extends Model {}
 Product.init(
   {
     // define columns
+    CREATE table Product (id int NOT NULL AUTO_INCREMENT PRIMARY KEY, name varchar(20) NOT NULL, price decimal, NOT NULL, stock int NOT NULL, category_id int );
   },
   {
     sequelize,
